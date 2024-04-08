@@ -1,0 +1,70 @@
+server {
+
+        root /var/www/eatoearn/;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name eatoearn eatoearn.com www.eatoearn.com;
+
+        location / {
+                try_files $uri app/index.html;
+                add_header Cache-Control "no-cache";
+        }
+
+	location /admin {
+        	try_files $uri admin/index.html;
+		add_header Cache-Control "no-cache";
+	}
+
+        location /static {
+                expires 1y;
+                add_header Cache-Control "public";
+        }
+
+        location /api {
+                # Proxy pass requests to the backend API server
+                proxy_pass http://localhost:5000;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+
+                # Adjust these settings based on your backend requirements
+                # proxy_connect_timeout   5s;
+                # proxy_send_timeout      60s;
+                # proxy_read_timeout      60s;
+                # send_timeout            60s;
+        }
+
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/eatoearn.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/eatoearn.com/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+
+
+
+
+
+}
+
+server {
+    if ($host = www.eatoearn.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    if ($host = eatoearn.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    server_name eatoearn eatoearn.com www.eatoearn.com;
+    listen 80;
+    return 404; # managed by Certbot
+
+
+
+
+}

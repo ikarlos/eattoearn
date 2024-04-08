@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ebcda0bc.css",
+    "main.js": "/static/js/main.1da11cfd.js",
+    "static/media/verifError.png": "/static/media/verifError.3d5bb9c3e957dda2677a.png",
+    "static/media/nothing_here.webp": "/static/media/nothing_here.4fa86a544508d5efa334.webp",
+    "static/media/metropolis-latin-400-italic.woff": "/static/media/metropolis-latin-400-italic.0acb40fac92bd0b8f2d3.woff",
+    "static/media/brand.png": "/static/media/brand.ee795a1a6132cb8ea5cf.png",
+    "static/media/metropolis-latin-400-normal.woff": "/static/media/metropolis-latin-400-normal.d6363f8209002f967c3d.woff",
+    "static/media/metropolis-latin-400-italic.woff2": "/static/media/metropolis-latin-400-italic.d5daf742611b86ea2649.woff2",
+    "static/media/metropolis-latin-400-normal.woff2": "/static/media/metropolis-latin-400-normal.c7106e4ab743a4136ded.woff2",
+    "static/media/nothing.webp": "/static/media/nothing.beacae2f746c9b71dfbf.webp",
+    "static/media/gift.png": "/static/media/gift.dc5b9707ca7d32ac9b65.png",
+    "static/media/cart_empty.avif": "/static/media/cart_empty.b7bc6a4af8c1d3905444.avif",
+    "static/media/no_address.avif": "/static/media/no_address.3cc29c4c680a28b49caa.avif",
+    "index.html": "/index.html",
+    "static/media/loading.svg": "/static/media/loading.cb64245a48b583702cbcafa43f9b88ba.svg",
+    "main.ebcda0bc.css.map": "/static/css/main.ebcda0bc.css.map",
+    "main.1da11cfd.js.map": "/static/js/main.1da11cfd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebcda0bc.css",
+    "static/js/main.1da11cfd.js"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6cd1d085.css",
+    "main.js": "/static/js/main.339566f9.js",
+    "static/media/metropolis-latin-400-italic.woff": "/static/media/metropolis-latin-400-italic.0acb40fac92bd0b8f2d3.woff",
+    "static/media/brand.png": "/static/media/brand.ee795a1a6132cb8ea5cf.png",
+    "static/media/metropolis-latin-400-normal.woff": "/static/media/metropolis-latin-400-normal.d6363f8209002f967c3d.woff",
+    "static/media/metropolis-latin-400-italic.woff2": "/static/media/metropolis-latin-400-italic.d5daf742611b86ea2649.woff2",
+    "static/media/metropolis-latin-400-normal.woff2": "/static/media/metropolis-latin-400-normal.c7106e4ab743a4136ded.woff2",
+    "index.html": "/index.html",
+    "main.6cd1d085.css.map": "/static/css/main.6cd1d085.css.map",
+    "main.339566f9.js.map": "/static/js/main.339566f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cd1d085.css",
+    "static/js/main.339566f9.js"
+  ]
+}
